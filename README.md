@@ -10,7 +10,7 @@
   - Filtering
   - Grouping
   - Visualization
-# Technologies 
+# Technologies
 
   List with used technologies, ex:
   - Python
@@ -23,9 +23,27 @@
 # Steps
   Add here any insights you had during the project
 
+  Structure:
+vanguard-ab-test/
+├── config.yaml
+├── README.md
+├── requirements.txt
+├── data/
+│   └── raw/
+│   │    ├── df_final_demo.txt
+│   │    ├── df_final_experiment_clients.txt
+│   │    ├── df_final_web_data_pt_1.txt
+│   │    └── df_final_web_data_pt_2.txt
+│   └── sql/
+│        └── ab_test_schema.sql
+├── notebook/
+│   └── ab_import.ipynb
+└── src/
+    └── functions/
+        └── ab_clean.py
+
 # Conclusion
   Final conclusion
-  
+
 # Contact
-  linkedin, github, medium, etc 
-  
+  linkedin, github, medium, etc
