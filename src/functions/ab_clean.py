@@ -21,7 +21,7 @@ def insert_to_table(data, engine, table_name):
     Usage: This function takes three parameters the data to be inserted, the engine that was created and the name of the table your going to insert the data.
     Return: The number of row of data inserted.
     '''
-    data.to_sql(table_name, con=engine, if_exists='replace',index=False)
+    data.to_sql(table_name, con=engine, if_exists='append',index=False)
 
 def filter_data(data, unique_client_ids):
     '''Filters data based on unique_client_ids (list/array) and returns the filtered DataFrame.
