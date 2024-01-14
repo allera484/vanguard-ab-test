@@ -1,6 +1,7 @@
 directories:
   root: ./vanguard-ab-test/
   data:
+    clean: ./vanguard-ab-test/data/clean/
     raw: ./vanguard-ab-test/data/raw/
     sql: ./vanguard-ab-test/data/sql/
   notebook: ./vanguard-ab-test/notebook/
@@ -11,3 +12,7 @@ data_paths:
   experiment: '../data/raw/df_final_experiment_clients.txt'
   web_data_1: '../data/raw/df_final_web_data_pt_1.txt'
   web_data_2: '../data/raw/df_final_web_data_pt_2.txt'
+  clean_demo: '../data/clean/clean_df_demo.csv'
+  clean_experiment: '../data/clean/clean_df_experiment_clients.csv'
+  clean_web_data_1: '../data/clean/clean_df_web_data_pt_1.csv'
+  clean_web_data_2: '../data/clean/clean_df_web_data_pt_2.csv'
