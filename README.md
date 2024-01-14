@@ -10,7 +10,7 @@
   - Filtering
   - Grouping
   - Visualization
-# Technologies 
+# Technologies
 
   List with used technologies, ex:
   - Python
@@ -44,7 +44,6 @@ vanguard-ab-test/
 
 # Conclusion
   Final conclusion
-  
+
 # Contact
-  linkedin, github, medium, etc 
-  
+  linkedin, github, medium, etc

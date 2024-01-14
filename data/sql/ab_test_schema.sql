@@ -10,9 +10,9 @@ CREATE TABLE IF NOT EXISTS df_final_demo (
     clnt_tenure_yr INT,
     clnt_tenure_mnth INT,
     clnt_age INT,
-    gendr VARCHAR(100),
+    gender VARCHAR(100),
     num_accts INT,
-    bal FLOAT,
+    balance FLOAT,
     calls_6_mnth INT,
     logons_6_mnth INT
 );
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS df_final_demo (
 -- Create df_final_experiment_clients table
 CREATE TABLE IF NOT EXISTS df_final_experiment_clients (
     client_id INT PRIMARY KEY,
-    Variation VARCHAR(100),
+    variation VARCHAR(100),
     FOREIGN KEY (client_id) REFERENCES df_final_demo(client_id)
 );
 
