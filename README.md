@@ -75,8 +75,6 @@
     └── src/
         └── functions/
             └── ab_clean.py
-        └── app/
-            └── main.py
   ```
 
   Order to run and get the codes:
