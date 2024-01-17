@@ -5,7 +5,8 @@ directories:
     raw: ./vanguard-ab-test/data/raw/
     sql: ./vanguard-ab-test/data/sql/
   notebook: ./vanguard-ab-test/notebook/
-  src: ./vanguard-ab-test/src/functions/
+  src: 
+    functions: ./vanguard-ab-test/src/functions/
 
 data_paths:
   demo: '../data/raw/df_final_demo.txt'

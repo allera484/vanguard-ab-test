@@ -44,7 +44,7 @@
 
 # Steps
 
-  Structure: 
+  Structure:
   ```
     vanguard-ab-test/
     ├── config.yaml
@@ -62,12 +62,15 @@
     │   │    ├── df_final_web_data_pt_1.txt
     │   │    └── df_final_web_data_pt_2.txt
     │   └── sql/
+    │        ├── client_tenure_hypotesis.sql
     │        └── ab_test_schema.sql
     ├── notebook/
     │   ├── ab_import.ipynb
+    │   ├── client_tenure_hypothesis.ipynb
     │   └── VSR_CX_Vanguard.ipynb
     ├── presentation/
     │   └── Tableau/
+    │        └── client_tenure_hypothesis.twb
     └── src/
         └── functions/
             └── ab_clean.py
@@ -92,8 +95,8 @@
     - Refer to the `presentation/Tableau` file to examine graphical representations for every hypothesis in Tableau.
 
 # Conclusion
-  Final conclusion
+
+  To sum up, a thorough examination of Vanguard's A/B testing project has revealed important information on the effects of a revised digital interface. In order to determine the efficacy of the new design, the project first investigated the demographics, behaviors, and KPIs of its clients. This was followed by hypothesis testing. The findings showed that although there is no statistically significant difference in client retention between users of the old and new processes, the duration of a client's stay did not significantly affect completion rates. The experiment's design was found to be effective, and the duration was thought to be sufficient for gathering useful data. With the help of Tableau, the project produced a number of eye-catching presentations that gave stakeholders an interactive, understandable account of the experiment's results. All things considered, this initiative gives Vanguard important information with which to make strategic choices about user experience and upcoming improvements to its digital platform.
 
 # Contact
   linkedin, github, medium, etc
-

@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS df_final_demo (
     clnt_tenure_yr INT,
     clnt_tenure_mnth INT,
     clnt_age INT,
-    gender VARCHAR(20), 
+    gender VARCHAR(20),
     num_accts INT,
     balance FLOAT,
     calls_6_mnth INT,
@@ -36,16 +36,6 @@ CREATE TABLE IF NOT EXISTS df_final_web_data (
 );
 
 -- Create df_final_web_data_missing table
-CREATE TABLE IF NOT EXISTS df_final_web_data_missing (
-    id INT PRIMARY KEY,
-    client_id INT,
-    visitor_id VARCHAR(100),
-    visit_id VARCHAR(100),
-    process_step VARCHAR(100),
-    date_time DATETIME
-);
-
--- Create df_final_web_data_pt_2 table
 CREATE TABLE IF NOT EXISTS df_final_web_data_missing (
     id INT PRIMARY KEY,
     client_id INT,
