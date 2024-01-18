@@ -43,7 +43,7 @@
       - 
 
       Hypothesis Tenure
-      **Hypothesis on Client Tenure & Hypothesis on Client Tenure-Related Completion Rate**:
+      - **Hypothesis on Client Tenure & Hypothesis on Client Tenure-Related Completion Rate**:
       - Get the data neeeded to answer the hypothesis
       - Graph the data using panda, seaborn and matplotlib
       - Do hypothesis testing on both hypothesis
