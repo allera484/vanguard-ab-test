@@ -1,40 +1,74 @@
 # vanguard-ab-test
 
   Project status(Active, On-Hold, Completed)
+
 # Project objective
 
   We are starting a team project at Vanguard to decipher the findings from a recent digital experiment in the CX department. Our main goal as data analysts is to decipher the results of the A/B test that was run between March 15, 2017, and June 20, 2017. Renowned investment management company Vanguard aimed to improve its online customer experience with timely in-context reminders and a revamped User Interface (UI). Two groups participated in the experiment: the Test Group used the updated digital interface, while the Control Group used the conventional online procedure. Three primary datasets are included in our investigation: the Experiment Roster (df_final_experiment_clients), Digital Footprints (df_final_web_data), and Client Profiles (df_final_demo).In the upcoming weeks, our group's work will be carried out in an iterative manner that includes exploratory data analysis (EDA), key performance indicator (KPI) identification, hypothesis testing, cost-effectiveness assessment, and a comprehensive review of the experiment's design and duration. We use Tableau, Python, Pandas, Matplotlib, Seaborn, and Streamlit to produce thorough visuals and useful insights. By addressing both statistical significance and cost-effectiveness, this collaborative effort aims to provide a comprehensive understanding of how the new digital design affects user engagement and process completion rates. The result will be a polished and refined project presentation that captures the knowledge and insights of the team as a whole.
 
 # Methods
 
-  List with methods, ex:
   - Data Cleaning
-      # df_final_demo
+      ## df_final_demo
       - Changed the name for the following columns: {'bal': 'balance', 'gendr': 'gender'}
       - Dropped 'X' Gender Values
       - Changed types to INT for ['clnt_age'], ['clnt_tenure_yr'], ['clnt_tenure_mnth']
       - Dropped NA - ONLY 14 Values
       - Change Balance format
 
-      # df_final_experimental_clients
+      ## df_final_experimental_clients
       - Changed the name for the following columns: {'Variation':'variation'}
 
-      # df_final_web_data_pt_1
+      ## df_final_web_data_pt_1
       - Dropped NA - Total 2095
 
-      # df_final_web_data_pt_2
+      ## df_final_web_data_pt_2
       - Dropped NA - Total 8669
 
-  - Grouping
-  - Visualization
+  - Data Import to SQL
+      ## df_final_demo
+      - Insert without any change
+
+      ## df_final_experimental_clients
+      - Verify if the [`client_id`] exist in the table already
+
+      ## df_final_web_data_pt_1  & df_final_web_data_pt_2
+      - Merge the clean data
+      - Separate the data to be inserted into two different tables
+      - Table that contains the data from the [`client_id`] that exist on the df_final_demo table
+      - Table that contains the data of the [`client_id`] that doesn't on the df_final_demo table 
+
+  - Answering the hypothesis:
+      ## Hypothesis Age
+      - 
+
+      ## Hypothesis Tenure
+      **Hypothesis on Client Tenure & Hypothesis on Client Tenure-Related Completion Rate**:
+      - Get the data neeeded to answer the hypothesis
+      - Graph the data using panda, seaborn and matplotlib
+      - Do hypothesis testing on both hypothesis
+
+      ## Hypothesis Gender
+      - 
+
+  - Visualizing on Tableau:
+    Utilize Tableau to replicate the graphs gotten on python to make them more interactual for the user.
 
 # Technologies
 
-  List with used technologies, ex:
-  - Python
-  - Pandas
-  - MySQL
-  - Tableau
+  List of technologies and libraries used:
+  - Technolgies
+    - Jupither Notebook
+    - Pyhton
+    - MySQL
+    - Tableau
+  
+  - Libraries:
+    - pandas
+    - SQLAlchemy
+    - matplotlib
+    - seaborn
+    - PyYAML
 
 # Project Description
 
