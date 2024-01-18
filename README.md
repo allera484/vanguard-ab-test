@@ -8,51 +8,51 @@
 
 # Methods
 
-  - Data Cleaning
-      ## df_final_demo
+  - ## Data Cleaning
+      df_final_demo
       - Changed the name for the following columns: {'bal': 'balance', 'gendr': 'gender'}
       - Dropped 'X' Gender Values
       - Changed types to INT for ['clnt_age'], ['clnt_tenure_yr'], ['clnt_tenure_mnth']
       - Dropped NA - ONLY 14 Values
       - Change Balance format
 
-      ## df_final_experimental_clients
+      df_final_experimental_clients
       - Changed the name for the following columns: {'Variation':'variation'}
 
-      ## df_final_web_data_pt_1
+      df_final_web_data_pt_1
       - Dropped NA - Total 2095
 
-      ## df_final_web_data_pt_2
+      df_final_web_data_pt_2
       - Dropped NA - Total 8669
 
-  - Data Import to SQL
-      ## df_final_demo
+  - ## Data Import to SQL
+      df_final_demo
       - Insert without any change
 
-      ## df_final_experimental_clients
+      df_final_experimental_clients
       - Verify if the [`client_id`] exist in the table already
 
-      ## df_final_web_data_pt_1  & df_final_web_data_pt_2
+      df_final_web_data_pt_1  & df_final_web_data_pt_2
       - Merge the clean data
       - Separate the data to be inserted into two different tables
       - Table that contains the data from the [`client_id`] that exist on the df_final_demo table
       - Table that contains the data of the [`client_id`] that doesn't on the df_final_demo table 
 
-  - Answering the hypothesis:
-      ## Hypothesis Age
+  - ## Answering the hypothesis:
+      Hypothesis Age
       - 
 
-      ## Hypothesis Tenure
+      Hypothesis Tenure
       **Hypothesis on Client Tenure & Hypothesis on Client Tenure-Related Completion Rate**:
       - Get the data neeeded to answer the hypothesis
       - Graph the data using panda, seaborn and matplotlib
       - Do hypothesis testing on both hypothesis
 
-      ## Hypothesis Gender
+      Hypothesis Gender
       - 
 
-  - Visualizing on Tableau:
-    Utilize Tableau to replicate the graphs gotten on python to make them more interactual for the user.
+  - ## Visualizing on Tableau:
+    - Utilize Tableau to replicate the graphs gotten on python to make them more interactual for the user.
 
 # Technologies
 
@@ -96,15 +96,26 @@
     │   │    ├── df_final_web_data_pt_1.txt
     │   │    └── df_final_web_data_pt_2.txt
     │   └── sql/
-    │        ├── client_tenure_hypotesis.sql
+    │        ├── Age_Analysis/
+    │        │   ├── age_hypothesis_analysis.sql
+    │        │   ├── Client_Behavior_Analysis_AGE.sql
+    │        │   └── control_test_group_age.sql
+    │        ├── Tenure_Analysis/
+    │        │   ├── client_tenure_hypotesis.sql
+    │        │   └── client_tenure_related_completion_hypotesis.sql
     │        └── ab_test_schema.sql
     ├── notebook/
     │   ├── ab_import.ipynb
+    │   ├── Age_Hypothesis_Testing.ipynb
     │   ├── client_tenure_hypothesis.ipynb
     │   └── VSR_CX_Vanguard.ipynb
     ├── presentation/
     │   └── Tableau/
     │        └── client_tenure_hypothesis.twb
+    ├── resources/
+    │   └── img/
+    │        ├── Client-Tenure-Boxplot.png
+    │        └── Client-Tenure-Lineplot.png
     └── src/
         └── functions/
             └── ab_clean.py
