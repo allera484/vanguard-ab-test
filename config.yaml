@@ -1,11 +1,17 @@
 directories:
   root: ./vanguard-ab-test/
-  data:
+  data: ./vanguard-ab-test/data/
     clean: ./vanguard-ab-test/data/clean/
     raw: ./vanguard-ab-test/data/raw/
     sql: ./vanguard-ab-test/data/sql/
+      Age_Analysis: ./vanguard-ab-test/data/sql/Age_Analysis/
+      Tenure_Analysis: ./vanguard-ab-test/data/sql/Tenure_Analysis/
   notebook: ./vanguard-ab-test/notebook/
-  src: 
+  presentation: ./vanguard-ab-test/presentation/
+    Tableau: ./vanguard-ab-test/presentation/tableau/
+  resources: ./vanguard-ab-test/resources/
+    img: ./vanguard-ab-test/resources/img/
+  src: ./vanguard-ab-test/src/
     functions: ./vanguard-ab-test/src/functions/
 
 data_paths:
