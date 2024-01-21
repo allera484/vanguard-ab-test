@@ -44,9 +44,21 @@
 
       ### Hypothesis Tenure
       - **Hypothesis on Client Tenure & Hypothesis on Client Tenure-Related Completion Rate**:
-      - Get the data neeeded to answer the hypothesis
-      - Graph the data using panda, seaborn and matplotlib
-      - Do hypothesis testing on both hypothesis
+        - Data Retrival:
+          - Extract the relevant columns from 'df_final_demo', 'df_final_experiment_clients' and 'df_final_web_data' tables. Combine the datas from the tables to be utilize.
+        - Data Visualization:
+          - Create a boxplot to compare client tenure between control and test groups.
+          - Create a lineplot to show the trend of client tenure against balance.
+          - Create a barplot to visualize the completion rates by process step and client tenure.
+          - Create a boxplot to display the completion times for different process steps and variations.
+        - Calculate the Completion Time:
+          - Convert 'date_time' column to datetime format
+          - Calculate the completion time for each client by taking the difference between consecutive 'date_time' values.
+        - Hypotehsis Testing:
+          - For the first hypothesis:
+            - Perform the t-test to asses whether there's a signifcant difference in the average client tenure between control and test groups. Analyze the p-value to determine whether to accept or reject the null hypothesis.
+          - For the second hypothesis:
+            - Perform the chi-squared test to examine the relationship between the client tenure and completion rates across different process step. Analyze the p-value to determine whether to accept or reject the null hypothesis.
 
       ### Hypothesis Gender
       - 
