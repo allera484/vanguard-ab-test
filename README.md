@@ -40,7 +40,13 @@
 
   - ## Answering the hypothesis:
       ### Hypothesis Age
-      - 
+      - **Hypothesis**:
+        - Data Retrival:
+          - 
+        - Data Visualization:
+          - 
+        - Hypotehsis Testing:
+          - 
 
       ### Hypothesis Tenure
       - **Hypothesis on Client Tenure & Hypothesis on Client Tenure-Related Completion Rate**:
@@ -61,7 +67,13 @@
             - Perform the chi-squared test to examine the relationship between the client tenure and completion rates across different process step. Analyze the p-value to determine whether to accept or reject the null hypothesis.
 
       ### Hypothesis Gender
-      - 
+      - **Hypothesis**:
+        - Data Retrival:
+          - 
+        - Data Visualization:
+          - 
+        - Hypotehsis Testing:
+          - 
 
   - ## Visualizing on Tableau:
     - Utilize Tableau to replicate the graphs gotten on python to make them more interactual for the user.
@@ -128,6 +140,17 @@
     - Create graphs, tables, and hypothesis tests with notebooks from the `notebook` directory.
   6. **Tableau Visualization:**
     - Refer to the `presentation/Tableau` file to examine graphical representations for every hypothesis in Tableau.
+    - Links to the tableau public below:
+      - **Hypothesis Age**;
+        - 
+        - 
+      - **Hypothesis Tenure**;
+        - [Hypothesis 1](https://public.tableau.com/views/client_tenure_hypothesis1/Graphs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+        - [Hypothesis 2](https://public.tableau.com/views/client_tenure_hypothesis2/Comparison?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+      - **Hypothesis Gender**;
+        - 
+        - 
+    
 
 # Conclusion
 
