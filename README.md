@@ -85,40 +85,18 @@
     ├── README.md
     ├── requirements.txt
     ├── data/
-    │   └── clean/
-    │   │    ├── clean_df_demo.csv
-    │   │    ├── clean_df_experiment_clients.csv
-    │   │    ├── clean_df_web_data_pt_1.csv
-    │   │    └── clean_df_web_data_pt_2.csv
-    │   └── raw/
-    │   │    ├── df_final_demo.txt
-    │   │    ├── df_final_experiment_clients.txt
-    │   │    ├── df_final_web_data_pt_1.txt
-    │   │    └── df_final_web_data_pt_2.txt
+    │   ├── clean/
+    │   ├── raw/
     │   └── sql/
     │        ├── Age_Analysis/
-    │        │   ├── age_hypothesis_analysis.sql
-    │        │   ├── Client_Behavior_Analysis_AGE.sql
-    │        │   └── control_test_group_age.sql
-    │        ├── Tenure_Analysis/
-    │        │   ├── client_tenure_hypotesis.sql
-    │        │   └── client_tenure_related_completion_hypotesis.sql
-    │        └── ab_test_schema.sql
+    │        └── Tenure_Analysis/
     ├── notebook/
-    │   ├── ab_import.ipynb
-    │   ├── Age_Hypothesis_Testing.ipynb
-    │   ├── client_tenure_hypothesis.ipynb
-    │   └── VSR_CX_Vanguard.ipynb
     ├── presentation/
     │   └── Tableau/
-    │        └── client_tenure_hypothesis.twb
     ├── resources/
     │   └── img/
-    │        ├── Client-Tenure-Boxplot.png
-    │        └── Client-Tenure-Lineplot.png
     └── src/
         └── functions/
-            └── ab_clean.py
   ```
 
   ## Steps for Reproducing the Data
