@@ -167,7 +167,7 @@
     - Refer to the `presentation/Tableau` file to examine graphical representations for every hypothesis in Tableau.
     - Links to the tableau public below:
       - **Hypothesis Age**:
-        - 
+        - [Hypothesis 1 and Hypothesis 2 Dashboard](https://public.tableau.com/views/ProjectAgeAnalysis/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)  
       - **Hypothesis Tenure**:
         - [Hypothesis 1](https://public.tableau.com/views/client_tenure_hypothesis1/Graphs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
         - [Hypothesis 2](https://public.tableau.com/views/client_tenure_hypothesis2/Comparison?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
