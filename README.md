@@ -100,13 +100,6 @@
         - Second Hypothesis:
           -  Perform a Chi-Square test to asses whether there's a signifcant difference between gender and in the impact of the completion             rate for the new design between gender.
           -  Analyze the p-value to determine whether to reject or not reject the null hypothesis.
-      - **Hypothesis on**:
-        - Data Retrieval:
-          - 
-        - Data Visualization:
-          - 
-        - Hypotehsis Testing:
-          - 
   - ## Visualizing on Tableau:
     - Utilize Tableau to replicate the graphs gotten on Python to make them more interactual for the user.
 
