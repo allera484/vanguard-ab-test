@@ -30,7 +30,7 @@
       - Insert without any change
 
       df_final_experimental_clients
-      - Verify if the [`client_id`] exist in the table already
+      - Verify if the [`client_id`] exists in the table already
 
       df_final_web_data_pt_1  & df_final_web_data_pt_2
       - Merge the clean data
@@ -41,16 +41,26 @@
   - ## Answering the hypothesis:
       ### Hypothesis Age
       - **Hypothesis on**:
-        - Data Retrival:
-          - 
+        - Data Retrieval:
+          - Extract the relevant columns from 'df_final_demo', 'df_final_experiment_clients' and 'df_final_web_data' tables. The data was combined from the tables to three be utilized.
+          - Initial queries were done using SQL. Although SQL was a great way to answer many of the questions, python code was then used for hypothesis testing and initial visualizations.
+        - Age Grouping:
+          - clnt_age ranged from age 15 to 96. A grouping function was created and used for all age analyses. Grouping was done 0-19, 20-29, 30-39, 40-49, 50-59, 60-69, and 70+
         - Data Visualization:
-          - 
+          - Created a simple bar graph to show the age distribution based on unique client_IDs.
+          - Used density plot & heatmap to visualize age distribution related to client_ID's test Variation ('Control' vs 'Test')
+          - Created bar plots & line plots to visualize age distribution related to completion rates from start to confirm.
         - Hypotehsis Testing:
-          - 
+          - For the first hypothesis:
+            - Perform the t-test to assess whether there's a significant difference in the average client AGE between the control and test groups. Analyze the p-value to determine whether to accept or reject the null hypothesis.
+            - Based on the p-value results (p-value = 0.7310) we failed to reject the null hypothesis (H0). This was mainly because there was not enough evidence to determine that the age of clients engaging with the new process was different than those using the older system.
+          - For the second hypothesis:
+            - Perform the chi-squared test to examine the relationship between client AGE and completion rates across different process steps. Analyze the p-value to determine whether to accept or reject the null hypothesis.
+            - Based on the p-value results (p-value = 1.0272886511987996e-86) we reject null hypothesis (H0) and accept the alternative hypothesis (H1). 
 
       ### Hypothesis Tenure
       - **Hypothesis on Client Tenure & Hypothesis on Client Tenure-Related Completion Rate**:
-        - Data Retrival:
+        - Data Retrieval:
           - Extract the relevant columns from 'df_final_demo', 'df_final_experiment_clients' and 'df_final_web_data' tables. Combine the datas from the tables to be utilize.
         - Data Visualization:
           - Create a boxplot to compare client tenure between control and test groups.
@@ -62,13 +72,13 @@
           - Calculate the completion time for each client by taking the difference between consecutive 'date_time' values.
         - Hypotehsis Testing:
           - For the first hypothesis:
-            - Perform the t-test to asses whether there's a signifcant difference in the average client tenure between control and test groups. Analyze the p-value to determine whether to accept or reject the null hypothesis.
+            - Perform the t-test to assess whether there's a significant difference in the average client tenure between control and test groups. Analyze the p-value to determine whether to accept or reject the null hypothesis.
           - For the second hypothesis:
-            - Perform the chi-squared test to examine the relationship between the client tenure and completion rates across different process step. Analyze the p-value to determine whether to accept or reject the null hypothesis.
+            - Perform the chi-squared test to examine the relationship between the client tenure and completion rates across different process steps. Analyze the p-value to determine whether to accept or reject the null hypothesis.
 
       ### Hypothesis Gender
       - **Hypothesis on**:
-        - Data Retrival:
+        - Data Retrieval:
           - 
         - Data Visualization:
           - 
@@ -76,12 +86,12 @@
           - 
 
   - ## Visualizing on Tableau:
-    - Utilize Tableau to replicate the graphs gotten on python to make them more interactual for the user.
+    - Utilize Tableau to replicate the graphs gotten on Python to make them more interactual for the user.
 
 # Technologies
 
   List of technologies and libraries used:
-  - Technolgies
+  - Technologies
     - Jupither Notebook
     - Pyhton
     - MySQL
@@ -96,9 +106,9 @@
 
 # Project Description
 
-  Three key datasets that shed light on the parameters of Vanguard's A/B testing trial are the center of our investigation. The foundation of customer profiles is the core dataset, df_final_demo, which offers a plethora of demographic data, including age, gender, and account details. This dataset provides context for comprehending the user personas involved in the digital experiment and captures the essence of Vanguard's diversified clientele. In addition, df_final_web_data records the complex digital traces that customers leave behind when navigating the online procedure. This dataset, which is divided into two sections, pt_1 and pt_2, records client interactions and actions and serves as a foundation for understanding user behavior. Finally, the experiment roster, df_final_experiment_clients, reveals the makeup of the Control and Test Groups, outlining clients' involvement in the old and new digital interfaces.
+  Three key datasets that shed light on the parameters of Vanguard's A/B testing trial are the center of our investigation. The foundation of customer profiles is the core dataset, df_final_demo, which offers a plethora of demographic data, including age, gender, and account details. This dataset provides context for comprehending the user personas involved in the digital experiment and captures the essence of Vanguard's diversified clientele. In addition, df_final_web_data records the complex digital traces that customers leave behind when navigating the online procedure. This dataset, which is divided into two sections, pt_1 and pt_2, records client interactions and actions and serves as a foundation for understanding user behavior. Finally, the experiment roster, df_final_experiment_clients, reveal the makeup of the Control and Test Groups, outlining clients' involvement in the old and new digital interfaces.
 
-  These datasets were selected and organized to allow for a thorough investigation of the effects of the A/B test. The data includes client tenure, age and gender distribution, and specific steps taken during the online process. We want to perform a thorough exploratory data analysis (EDA) using Python tools such as Pandas, Matplotlib, and Seaborn in order to identify patterns, correlations, and possible outliers in these datasets. The team's cooperative efforts as we work through the complexities of the datasets and make sure that any problems with data cleaning are quickly resolved will determine the integrity and dependability of our results. These datasets will form the foundation of our insights as we explore the subtleties of client behavior and demographics, guiding the story toward a more profound comprehension of the A/B testing results.
+  These datasets were selected and organized to allow for a thorough investigation of the effects of the A/B test. The data includes client tenure, age, and gender distribution, and specific steps taken during the online process. We want to perform a thorough exploratory data analysis (EDA) using Python tools such as Pandas, Matplotlib, and Seaborn in order to identify patterns, correlations, and possible outliers in these datasets. The team's cooperative efforts as we work through the complexities of the datasets and make sure that any problems with data cleaning are quickly resolved will determine the integrity and dependability of our results. These datasets will form the foundation of our insights as we explore the subtleties of client behavior and demographics, guiding the story toward a more profound comprehension of the A/B testing results.
 
 # Steps
 
@@ -155,6 +165,7 @@
 # Conclusion
 
   To sum up, a thorough examination of Vanguard's A/B testing project has revealed important information on the effects of a revised digital interface. In order to determine the efficacy of the new design, the project first investigated the demographics, behaviors, and KPIs of its clients. This was followed by hypothesis testing. The findings showed that although there is no statistically significant difference in client retention between users of the old and new processes, the duration of a client's stay did not significantly affect completion rates. The experiment's design was found to be effective, and the duration was thought to be sufficient for gathering useful data. With the help of Tableau, the project produced a number of eye-catching presentations that gave stakeholders an interactive, understandable account of the experiment's results. All things considered, this initiative gives Vanguard important information with which to make strategic choices about user experience and upcoming improvements to its digital platform.
+  We believe the new design would help younger users while older users might still face some trouble going though the system. Overall we believe the new design can improve. 
 
 # Contact
   linkedin, github, medium, etc
