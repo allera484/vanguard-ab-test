@@ -1,6 +1,6 @@
 # vanguard-ab-test
 
-  Project status(Active, On-Hold, Completed)
+  Project status(Completed)
 
 # Project objective
 
