@@ -77,6 +77,29 @@
             - Perform the chi-squared test to examine the relationship between the client tenure and completion rates across different process steps. Analyze the p-value to determine whether to accept or reject the null hypothesis.
 
       ### Hypothesis Gender
+      - **Hypothesis on Client Gender Group Variation & Hypothesis on Client Gender Completion Rate**:
+      -  Data Retrieval:
+          - Extract the relevant columns from 'df_final_demo', 'df_final_experiment_clients', 'df_final_web_data_pt1 and 
+            df_final_web_data_pt2' tables. Merged df_final_web_data_pt1 and df_final_web_data_pt2' tables, also combine 'df_final_demo', 
+            and 'df_final_experiment_clients' from tables to obtain the data of the tables to be utilize.
+      -  Data Visualization:
+          -Create a barplot to visualize clients gender variation between control and test groups.
+          - Create a barplot to visualize the impact of the completion rate by gender
+          - Create a barplot to visualize the client gender completion rate by percentage.
+      -  Calculate the Variation with the new or old process:
+          - Selected gender and variation columns
+          - Calculate the total variation, dividing the test and control values by gender in two columns. 
+          - Count the total values of test and control by gender.
+      -  Calculate the Completion Rate Steps:
+         - Merged data_web_pt_1 and data_web_pt_2 to get the process_step column, and combine it with the df_demo table.
+         - Combine the process_steps columns with genders and calculate the percentage representation.
+      - Hypothesis Testing
+        - First Hypothesis:
+          -- Perform a Chi-Square tes to asses whether there's a signifcant difference between gender and engaging with the new or old                  process.
+          - Analyze the p-value to determine whether to reject or not reject the null hypothesis.
+        - Second Hypothesis:
+          -  Perform a Chi-Square test to asses whether there's a signifcant difference between gender and in the impact of the completion             rate for the new design between gender.
+          -  Analyze the p-value to determine whether to reject or not reject the null hypothesis.
       - **Hypothesis on**:
         - Data Retrieval:
           - 
@@ -84,7 +107,6 @@
           - 
         - Hypotehsis Testing:
           - 
-
   - ## Visualizing on Tableau:
     - Utilize Tableau to replicate the graphs gotten on Python to make them more interactual for the user.
 
